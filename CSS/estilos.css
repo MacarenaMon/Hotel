@@ -1,0 +1,84 @@
+@font-face{
+    font-family: "zhegotte";
+    src: url(../assets/fonts/Zhegotte.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Roboto",sans-serif, Arial, Helvetica;
+    font-weight: bold;
+    background-color: #F7F5E6;
+}
+header {
+    background-color:#F7F5E6;
+    background-color: #52658F;
+    font-size: 20px;
+    text-align: right;
+}
+
+h1 {
+    text-align: left;
+    font-size: 30px;
+    background-position: left;
+    padding-top: 50px;
+    color: #E8E8E8;
+    font-family: "zhegotte"; 
+}
+
+
+ul li {
+    display: inline-block;
+    background-size: contain;
+    background-position: right;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #E8E8E8;
+    padding: 10px;
+}
+footer {
+    height: 50px;
+    padding: 50px;
+    background-color: #E8E8E8;
+    color: #333A56;
+    text-align: center;
+}    
+
+.botonEnlaces{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.imagenHotel{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin-top: 50px;
+}
+.datosNosotros{
+    width: 90%;
+    margin: 20px auto;
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+.mapaUbicacion {
+    display: flex;
+    align-items: center;
+}
+.habitaciones img{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
