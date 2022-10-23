@@ -14,8 +14,8 @@ body {
     background-color: #F7F5E6;
 }
 header {
-    background-color:#F7F5E6;
-    background-color: #52658F;
+    
+    background-color: #52908B;
     font-size: 20px;
     text-align: right;
 }
@@ -45,7 +45,6 @@ footer {
     height: 50px;
     padding: 50px;
     background-color: #E8E8E8;
-    color: #333A56;
     text-align: center;
 }    
 
