@@ -107,11 +107,30 @@
                 </div>
     
             </form>
+
+            <script>
+
+                function validarEnviar() {
+                    if (document.validacion.nombre.value.length == 0) {
+                        alert ("Escriba su nombre")
+                        document.validacion.nombre.focus()
+                        return 0
+                    }
+
+                    alert("Formulario enviado")
+                    document.validacion.submit()
+
+                }
+                
+                    
+
+
+            </script>
     
     
-    
-            <input class="btn btn-primary" type="submit" value="Enviar">
-            <input class="btn btn-danger" type="reset" value="Borrar">
+     
+    <input class="btn btn-primary" type="button" value="Enviar" onclick="validarEnviar()">
+    <input class="btn btn-secondary" type="reset" value="Borrar">
     
     
         
