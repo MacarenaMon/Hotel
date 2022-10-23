@@ -15,9 +15,9 @@
 </head>    
 <body>
     <header>
-        <div>
-            <h1> Hotel Las Estrellas</h1>
-        </div>  
+        <div class="textoLogo"> 
+            <p>Hotel Las Estrellas</p>
+        </div>   
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -107,30 +107,11 @@
                 </div>
     
             </form>
-
-            <script>
-
-                function validarEnviar() {
-                    if (document.validacion.nombre.value.length == 0) {
-                        alert ("Escriba su nombre")
-                        document.validacion.nombre.focus()
-                        return 0
-                    }
-
-                    alert("Formulario enviado")
-                    document.validacion.submit()
-
-                }
-                
-                    
-
-
-            </script>
     
     
     
-            <input class="btn btn-primary" type="button" value="Enviar" onclick="validarEnviar()">
-            <input class="btn btn-secondary" type="reset" value="Borrar">
+            <input class="btn btn-primary" type="submit" value="Enviar">
+            <input class="btn btn-danger" type="reset" value="Borrar">
     
     
         
@@ -140,9 +121,10 @@
     </main>
     <footer>
         <div >
-            <a class="botonEnlaces" href="#"><img src="../assets/imagenes/gmail.png" alt="Correo" width="20"  ></a>   
-            <a class="botonEnlaces" href="#"><img src="../assets/imagenes/facebook.png" alt="Facebook" width="20"  ></a>
-            <a class="botonEnlaces" href="#"><img src="../assets/imagenes/instagram.png" alt="instagram" width="20"  ></a>
+            <a class="botonEnlaces" href="#"><img src="../assets/imagenes/gmail.png" alt="Correo"  width="20"  ></a>   
+            <a class="botonEnlaces" href="#"><img src="../assets/imagenes/facebook (4).png" alt="Facebook"  width="20"  ></a>
+            <a class="botonEnlaces" href="#"><img src="../assets/imagenes/instagram.png" alt="instagram"  width="20"  ></a>
+            <a class="botonEnlaces" href="#"><img src="../assets/imagenes/whatsapp.png" alt="whatsApp"  width="20"  ></a>
         </div> 
     </footer>  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

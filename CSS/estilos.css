@@ -5,37 +5,40 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
-
+main{
+    width: 100vw;
+}
 body {
     font-family: "Roboto",sans-serif, Arial, Helvetica;
     font-weight: bold;
     background-color: #F7F5E6;
 }
 header {
-    background-color:#F7F5E6;
-    background-color: #52658F;
+    background-color: #52908B;
     font-size: 20px;
     text-align: right;
 }
-
-h1 {
+.textoLogo {
     text-align: left;
-    font-size: 30px;
+    font-size: 2.5rem;
     background-position: left;
-    padding-top: 50px;
-    color: #E8E8E8;
+    margin-left: 5px;
+    padding-top: 2.5rem;
+    color: #2e1437;
     font-family: "zhegotte"; 
-}
-
-
+    animation-name: cambioTexto;
+    animation-duration: 3s;
+    animation-delay: 1s;  
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}   
 ul li {
     display: inline-block;
     background-size: contain;
     background-position: right;
 }
-
 ul li a {
     text-decoration: none;
     color: #E8E8E8;
@@ -45,7 +48,6 @@ footer {
     height: 50px;
     padding: 50px;
     background-color: #E8E8E8;
-    color: #333A56;
     text-align: center;
 }    
 
@@ -65,7 +67,6 @@ footer {
 .datosNosotros{
     width: 90%;
     margin: 20px auto;
-    
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
@@ -81,4 +82,56 @@ footer {
     width: 100%;
     height: 100%;
     margin-top: 50px;
+}
+.habitaciones p{
+    display: flex;
+    padding: 20px;
+    margin-top: 50px;
+    font-family: "Roboto",sans-serif, Arial, Helvetica;
+    font-weight: bold;
+}    
+.textoBienvenida{
+    padding: 20px;
+    font-family: "Roboto",sans-serif, Arial, Helvetica;
+    font-weight: bold;
+}
+.textoBienvenida h4{
+    text-align: center;
+}
+.tituloGalerias{
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: #2e1437;
+}
+.linea{
+    background: #52908B;
+    height: 5px;
+    width: 100%;
+    display: block;    
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.imgGaleria{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*Animaciones*/
+@keyframes cambioTexto{
+    0% {font-size: 0rem;}
+    25%  {font-size: 1rem;}
+    50%  {font-size: 1.5rem;}
+    75%  {font-size: 2rem;}
+    100%  {font-size: 2.5rem;}
 }
