@@ -20,14 +20,20 @@ header {
     text-align: right;
 }
 
-h1 {
+.textoLogo {
     text-align: left;
-    font-size: 30px;
+    font-size: 2.5rem;
     background-position: left;
-    padding-top: 50px;
-    color: #E8E8E8;
+    margin-left: 5px;
+    padding-top: 2.5rem;
+    color: #2e1437;
     font-family: "zhegotte"; 
-}
+    animation-name: cambioTexto;
+    animation-duration: 3s;
+    animation-delay: 1s;  
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}   
 
 
 ul li {
@@ -94,4 +100,13 @@ footer {
 }
 .textoBienvenida h4{
     text-align: center;
+}
+
+/*Animaciones*/
+@keyframes cambioTexto{
+    0% {font-size: 0rem;}
+    25%  {font-size: 1rem;}
+    50%  {font-size: 1.5rem;}
+    75%  {font-size: 2rem;}
+    100%  {font-size: 2.5rem;}
 }
